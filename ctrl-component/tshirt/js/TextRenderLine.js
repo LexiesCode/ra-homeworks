@@ -12,7 +12,7 @@ const TextRenderLine = ({value, onChange}) => {
                 cols="30" 
                 rows="2" 
                 placeholder="Введите текст для футболки"
-                //value={value}
+                value={value}
                 onChange={onEnterText}
                 >
            </textarea>
