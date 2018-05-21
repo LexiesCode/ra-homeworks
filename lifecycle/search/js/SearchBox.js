@@ -3,10 +3,10 @@ class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = { fixed: false };
+    this.setPosition = this.setPosition.bind(this);
   }
   
   componentDidMount() {
-    this.setPosition = this.setPosition.bind(this);
     window.addEventListener('scroll', this.setPosition);
   }
 
