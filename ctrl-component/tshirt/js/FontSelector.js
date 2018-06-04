@@ -18,7 +18,7 @@ const FontSelector = ({fonts, selectedFont, onSelect}) => {
                         />
                         <label htmlFor={font.name} className="grid-1">
                         <PictureFont 
-                            text={font.name.slice(0,3)} 
+                            text={'abc'} 
                             path={font.path}
                         />
                         </label>

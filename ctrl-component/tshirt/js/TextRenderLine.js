@@ -1,7 +1,8 @@
 const TextRenderLine = ({value, onChange}) => {
 
     const onEnterText = (e) => {
-        onChange(e.currentTarget.value);
+        const text = e.currentTarget.value.replace(/[^a-zA-Z\s]/gi, '').toLowerCase();
+        onChange(text);
     };
 
     return (
