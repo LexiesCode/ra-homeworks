@@ -4,9 +4,9 @@ class App extends React.Component {
       <Router>
         <div className="tabs">
           <nav className="tabs__items">
-            <NavLink to="/" exact className={"tabs__item"} activeClassName={"tabs__item-active"}>Рефераты</NavLink>
-            <NavLink to="/creator" className={"tabs__item"} activeClassName={"tabs__item-active"}>Криэйтор</NavLink>
-            <NavLink to="/fortune" className={"tabs__item"} activeClassName={"tabs__item-active"}>Гадалка</NavLink>
+            <NavLink to="/" exact className="tabs__item" activeClassName="tabs__item-active">Рефераты</NavLink>
+            <NavLink to="/creator" className="tabs__item" activeClassName="tabs__item-active">Криэйтор</NavLink>
+            <NavLink to="/fortune" className="tabs__item" activeClassName="tabs__item-active">Гадалка</NavLink>
           </nav>
           <div className="tabs__content">
             <Switch>
