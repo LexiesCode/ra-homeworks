@@ -3,12 +3,14 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Menu/>
+          <Menu className="menu__item" activeClass="menu__item-active"/>
           <div className="page">
-            <Route path="/" exact component={HomePage} />
-            <Route path="/drift" component={DriftPage} />
-            <Route path="/timeattack" component={TimeAttackPage} />
-            <Route path="/forza" component={ForzaPage} />
+            <Switch>
+              <Route path="/drift" component={DriftPage} />
+              <Route path="/timeattack" component={TimeAttackPage} />
+              <Route path="/forza" component={ForzaPage} />
+              <Route path="/" component={HomePage} />
+            </Switch>
           </div>
         </div>
       </Router>
